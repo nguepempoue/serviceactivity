@@ -18,7 +18,7 @@ pipeline{
          }
         stage('Check out from SCM') {
              steps {
-                  it branch: 'master-devops', credentialsId:'github', url:'https://github.com/nguepempoue/demo-web-v1.git'
+                  git branch: 'master', credentialsId:'github', url:'https://github.com/nguepempoue/serviceactivity.git'
              }
          }
 
