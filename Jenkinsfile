@@ -37,7 +37,7 @@ pipeline{
           stage('Deploy') {
                steps{
                  sh 'docker build -t serviceactivity .'
-                 sh 'docker run -p 8082:8080 serviceactivity'
+                 sh 'docker run -p 8084:8084 -d serviceactivity'
                 }
           }
 
